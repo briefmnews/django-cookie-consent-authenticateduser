@@ -1,0 +1,4 @@
+-e git://github.com/briefmnews/django-cookie-consent@plugin#egg=django-cookie-consent
+
+Django>=2,<3
+django-appconf
