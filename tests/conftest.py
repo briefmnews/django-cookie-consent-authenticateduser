@@ -7,6 +7,7 @@ from django.test import RequestFactory
 from .factories import (
     UserFactory,
     CookieGroupFactory,
+    CookieFactory,
     AuthenticatedUserCookieConsentFactory,
 )
 
@@ -27,6 +28,13 @@ def user_with_preferences():
 @pytest.fixture
 def user():
     return UserFactory()
+
+
+@pytest.fixture
+def cookie_group():
+    cookie_group = CookieGroupFactory()
+    CookieFactory(cookiegroup=cookie_group)
+    return cookie_group
 
 
 @pytest.fixture
