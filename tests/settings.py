@@ -13,3 +13,4 @@ INSTALLED_APPS = (
 DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3"}}
 
 COOKIE_CONSENT_NAME = "cookie_test"
+COOKIE_CONSENT_COOKIE_DOMAIN = None
