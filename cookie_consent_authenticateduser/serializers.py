@@ -6,5 +6,5 @@ from .models import AuthenticatedUserCookieConsent
 class AuthenticatedUserCookieConsentSerializer(serializers.ModelSerializer):
     class Meta:
         model = AuthenticatedUserCookieConsent
-        fields = ['action', 'created', 'cookiegroup']
+        fields = ["action", "created", "cookiegroup"]
         depth = 1
