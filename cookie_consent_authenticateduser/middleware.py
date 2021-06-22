@@ -20,7 +20,7 @@ class CheckAuthenticatedUserCookieContentMiddleware:
     def __call__(self, request):
         response = self.get_response(request)
 
-        if bool(get_not_accepted_or_declined_cookie_groups(request)):
+        if bool(get_not_accepted_or_declined_cookie_groups(request)) and request.user:
             if request.user.is_authenticated:
                 user_cookie_consents = AuthenticatedUserCookieConsent.objects.filter(
                     user=request.user
