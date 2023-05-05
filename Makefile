@@ -12,3 +12,7 @@ coverage:
 
 report:
 	pytest --cov=cookie_consent_authenticateduser --cov-report=html
+
+release:
+	git tag -a $(shell python -c "from cookie_consent_authenticateduser import __version__; print(__version__)") -m "$(m)"
+	git push origin --tags
