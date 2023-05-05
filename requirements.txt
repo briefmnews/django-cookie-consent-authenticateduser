@@ -1,12 +1,5 @@
--e git://github.com/briefmnews/django-cookie-consent@plugin#egg=django-cookie-consent
+-e git+https://github.com/briefmnews/django-cookie-consent@plugin#egg=django-cookie-consent
 
-Django>=2,<3
-django-appconf
-djangorestframework==3.12.4
-
-ipdb==0.13.4
-pytest==6.2.2
-pytest-cov==2.11.1
-pytest-django==4.1.0
-pytest-factoryboy==2.1.0
-pytest-pythonpath==0.7.3
+Django>=3,<5
+django-appconf==1.0.5
+djangorestframework==3.14.0
