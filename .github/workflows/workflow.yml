@@ -25,16 +25,16 @@ jobs:
     - uses: actions/cache@v3
       with:
         path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        key: ${{ runner.os }}-pip-${{ hashFiles('test_requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
           ${{ runner.os }}-
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r test_requirements.txt
     - name: Run tests and generate coverage report
-      run: py.test --nomigrations --tb=short --cov=cookie_consent_authenticateduser --cov-report=xml tests/
+      run: pytest --nomigrations --tb=short --cov=cookie_consent_authenticateduser --cov-report=xml tests/
     - name: Upload coverage report to Codecov
       uses: codecov/codecov-action@v3
       with:
