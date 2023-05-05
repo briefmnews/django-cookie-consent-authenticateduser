@@ -6,14 +6,14 @@ version = "1.2.1"
 
 CLASSIFIERS = [
     "Framework :: Django",
-    "Framework :: Django :: 2.1",
-    "Framework :: Django :: 2.2",
+    "Framework :: Django :: 3",
     "Intended Audience :: Developers",
     "Topic :: Software Development",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
 ]
 
 install_requires = ["Django>=2", "django-appconf", "django-cookie-consent"]
