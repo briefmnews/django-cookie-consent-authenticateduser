@@ -42,7 +42,7 @@ def display_cookie_consent(request):
 def get_cookie_groups_consent_state(cookie_groups):
     accepted_cookie_groups = {}
 
-    for (cookie_group, value) in cookie_groups.items():
+    for cookie_group, value in cookie_groups.items():
         accepted_cookie_groups[cookie_group] = bool(
             value != settings.COOKIE_CONSENT_DECLINE
         )
