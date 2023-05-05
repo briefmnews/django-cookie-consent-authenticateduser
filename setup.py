@@ -1,8 +1,8 @@
+import cookie_consent_authenticateduser
+
 from distutils.core import setup
 from setuptools import find_packages
 
-
-version = "1.2.1"
 
 CLASSIFIERS = [
     "Framework :: Django",
@@ -26,7 +26,7 @@ def read(f):
 setup(
     name="django-cookie-consent-authenticateduser",
     description="Django cookie consent authenticated user plugin",
-    version=version,
+    version=cookie_consent_authenticateduser.__version__,
     author="Brief.me",
     author_email="tech@brief.me",
     url="https://github.com/briefmnews/django-cookie-consent-authenticateduser",
