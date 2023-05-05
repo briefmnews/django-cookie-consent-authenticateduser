@@ -16,7 +16,7 @@ CLASSIFIERS = [
     "Programming Language :: Python :: 3.9",
 ]
 
-install_requires = ["Django>=2", "django-appconf", "django-cookie-consent"]
+install_requires = ["Django>=3", "django-appconf", "django-cookie-consent"]
 
 
 def read(f):
