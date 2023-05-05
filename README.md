@@ -1,6 +1,6 @@
 # django-cookie-consent-authenticateduser
-[![Python 3](https://img.shields.io/badge/python-3.6|3.7|3.8-blue.svg)](https://www.python.org/downloads/release/python-270/) 
-[![Django 2](https://img.shields.io/badge/django-2.x-blue.svg)](https://docs.djangoproject.com/en/2.2/)
+[![Python 3](https://img.shields.io/badge/python-3.7|3.8|3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) 
+[![Django 3](https://img.shields.io/badge/django-3.x-blue.svg)](https://docs.djangoproject.com/en/3.2/)
 ![Python CI](https://github.com/briefmnews/django-cookie-consent-authenticateduser/workflows/Python%20CI/badge.svg)
 [![codecov](https://codecov.io/gh/briefmnews/django-cookie-consent-authenticateduser/branch/main/graph/badge.svg?token=SXURKTTL1R)](https://codecov.io/gh/briefmnews/django-cookie-consent-authenticateduser)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
