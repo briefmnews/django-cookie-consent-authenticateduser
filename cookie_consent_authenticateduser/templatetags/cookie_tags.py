@@ -49,5 +49,6 @@ def display_cookie_consent(context):
 
     return {
         "show_cookie_consent": show_cookie_consent,
+        "request": request,
         **accepted_cookie_groups
     }
