@@ -46,8 +46,9 @@ def display_cookie_consent(context):
         accepted_cookie_groups = _get_cookie_groups_consent_state(
             get_cookie_dict_from_request(request)
         )
-
+    
     return {
+        "settings": context["settings"],
         "show_cookie_consent": show_cookie_consent,
         "request": request,
         **accepted_cookie_groups
