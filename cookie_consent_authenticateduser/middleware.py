@@ -21,9 +21,10 @@ class CheckAuthenticatedUserCookieContentMiddleware:
         response = self.get_response(request)
 
         if bool(get_not_accepted_or_declined_cookie_groups(request)) and request.user:
-            if request.user.is_authenticated:
+            user = request.user
+            if user.is_authenticated and getattr(user, "pk", None) is not None:
                 user_cookie_consents = AuthenticatedUserCookieConsent.objects.filter(
-                    user=request.user
+                    user_id=user.pk
                 )
                 cookie_dic = {}
                 for user_cookie_consent in user_cookie_consents:
