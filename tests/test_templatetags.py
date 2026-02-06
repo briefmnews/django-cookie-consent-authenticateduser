@@ -1,5 +1,6 @@
 import pytest
-from django.template import Context, Template
+from django.conf import settings as django_settings
+from django.template import Template, RequestContext
 
 pytestmark = pytest.mark.django_db
 
@@ -18,7 +19,7 @@ class TestDisplayCookieConsent:
 
         # WHEN
         template = Template(template_code)
-        context = Context({"request": request})
+        context = RequestContext(request, {"settings": django_settings})
         rendered_template = template.render(context)
 
         # THEN
@@ -37,7 +38,7 @@ class TestDisplayCookieConsent:
 
         # WHEN
         template = Template(template_code)
-        context = Context({"request": request})
+        context = RequestContext(request, {"settings": django_settings})
         rendered_template = template.render(context)
 
         # THEN
@@ -57,7 +58,7 @@ class TestDisplayCookieConsent:
 
         # WHEN
         template = Template(template_code)
-        context = Context({"request": request})
+        context = RequestContext(request, {"settings": django_settings})
         rendered_template = template.render(context)
 
         # THEN
@@ -75,7 +76,7 @@ class TestDisplayCookieConsent:
 
         # WHEN
         template = Template(template_code)
-        context = Context({"request": request})
+        context = RequestContext(request, {"settings": django_settings})
         rendered_template = template.render(context)
 
         # THEN
