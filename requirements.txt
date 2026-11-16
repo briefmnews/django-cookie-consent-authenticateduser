@@ -1,5 +1,4 @@
--e git+https://github.com/briefmnews/django-cookie-consent@plugin#egg=django-cookie-consent
-
-Django==3.2.19
-django-appconf==1.0.5
+django-cookie-consent @ git+https://github.com/briefmnews/django-cookie-consent.git@2.0.1
+Django==5.2.19
+django-appconf==1.2.0
 djangorestframework==3.14.0
