@@ -6,14 +6,13 @@ from setuptools import find_packages
 
 CLASSIFIERS = [
     "Framework :: Django",
-    "Framework :: Django :: 3",
+    "Framework :: Django :: 5.2",
     "Intended Audience :: Developers",
     "Topic :: Software Development",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
 ]
 
 install_requires = ["Django>=3", "django-appconf", "django-cookie-consent"]
