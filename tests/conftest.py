@@ -50,7 +50,7 @@ class RequestBuilder:
         request = rf.get(path)
         request.user = user or AnonymousUser()
 
-        middleware = SessionMiddleware()
+        middleware = SessionMiddleware(lambda request: None)
         middleware.process_request(request)
         request.session.save()
 
